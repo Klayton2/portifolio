@@ -16,6 +16,22 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.flex{
+    display: flex;
+}
+
+.btn-menu button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #262E80;
+    border: 0px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-menu button:hover{
+    box-shadow: 0px 0px 8px #262e80a6;
+}
 /* Css header */
 header{
     padding: 40px 4%;
@@ -50,33 +66,41 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-menu button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #262E80;
-    border: 0px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-header .btn-menu button:hover{
-    box-shadow: 0px 0px 8px #262e80a6;
-}
 /*Css txt-topo*/
-main section .interface {
-    padding: 40px 4%;
-
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
 
-section div h1 > span {
+.topo-site h1 {
+    font-size: 42px;
+    line-height: 40px;
+    
+}
+
+.topo-site .txt-topo h1 > span {
     color: #262E80;
-    font-size: 20px;
+    font-size: 42px;
     font-weight: bolder;
 }
 
+.topo-site .txt-topo p {
+    margin: 40px 0;
+}
+
 /*Css img*/
-.img-topo img{
-    display: inline-block;
-    padding: 10px 4%;
-    border-radius: 50px;
+.topo-site .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 40px;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
