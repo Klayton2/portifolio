@@ -32,6 +32,17 @@ body{
 .btn-menu button:hover{
     box-shadow: 0px 0px 8px #262e80a6;
 }
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #262E80;
+}
+
 /* Css header */
 header{
     padding: 40px 4%;
@@ -70,7 +81,7 @@ header nav ul li{
 section.topo-site .flex {
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 120px;
 }
 
 .topo-site h1 {
@@ -91,9 +102,40 @@ section.topo-site .flex {
 
 /*Css img*/
 .topo-site .img-topo img{
+    margin-top: 20px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 40px;
+}
+/*Css conhecimento*/
+section.conhecimentos {
+    padding: 40px 4%;
+}
+
+section.conhecimentos .flex {
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.conhecimentos .conhecimentos-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 25px;
+    color: white;
+    padding: 40px;
+    transition: .2s;
+   
+}
+
+.conhecimentos .conhecimentos-box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 8px #ffffff48;
 }
 
 @keyframes flutuar {
