@@ -7,6 +7,10 @@
     color: white;
 }
 
+a {
+    cursor: pointer;
+}
+
 body{
     background-color: black;
     height: 100vh;
@@ -199,7 +203,6 @@ section.projetos .flex {
     height: 460px;
     background-size: cover;
     border-radius: 40px;
-    cursor: pointer;
     position: relative;
 }
 
