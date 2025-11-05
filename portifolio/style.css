@@ -228,6 +228,50 @@ section.projetos .flex {
     opacity: 1;
 }
 
+/*Css formulario*/
+
+.formulario {
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #262E80;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 @keyframes flutuar {
     0%{
         top: 0;
