@@ -1,1 +1,14 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/portifolio/portifolio/index.html"
+    },
+    {
+      "src": "^/(.*)",
+      "dest": "/portifolio/portifolio/$1"
+    }
+  ]
+}
